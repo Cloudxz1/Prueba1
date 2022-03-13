@@ -17,5 +17,10 @@ public class Presidentes extends Persona{
 	public void setPartido(String partido) {
 		this.partido = partido;
 	}
+	
+	public String GetPresidente() {
+		
+		return this.getNombre() +" "+ this.getEdad() +" "+ this.getPartido();
+	}
 
 }

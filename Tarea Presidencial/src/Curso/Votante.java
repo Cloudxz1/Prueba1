@@ -1,39 +1,34 @@
 package Curso;
 
-public class Votante extends Establecimiento{
+import java.util.ArrayList;
+
+public class Votante extends Persona{
 	
 	private int cod;
 
-
-	private String nombre;
 	private String rut;
-	private int edad;
+	private Presidentes pre;
+	private ArrayList<Establecimiento> esta;
 
 
-	
-	public Votante(int cod,String nombre,String rut, int edad,int codEst,String DirEst,String nombreEst) {
-		super(codEst,DirEst,nombreEst);
-		this.nombre = nombre;
-		this.edad = edad;
+	public Votante(int cod,String nombre,String rut, int edad, Presidentes pre, ArrayList<Establecimiento>esta) {
+		super(nombre,edad);
 		this.cod = cod;
 		this.rut = rut;
-		
+		this.pre = pre;
+		this.esta = esta;
 	}
-	public int getEdad() {
-		return edad;
+	public Presidentes getPre() {
+		return pre;
 	}
-
-	public void setEdad(int edad) {
-		this.edad = edad;
+	public void setPre(Presidentes pre) {
+		this.pre = pre;
 	}
-
-	
-	public String getNombre() {
-		return nombre;
-	
+	public ArrayList<Establecimiento> getEsta() {
+		return esta;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setEsta(ArrayList<Establecimiento> esta) {
+		this.esta = esta;
 	}
 	public String getRut() {
 		return rut;
@@ -49,5 +44,9 @@ public class Votante extends Establecimiento{
 
 	public void setCod(int cod) {
 		this.cod = cod;
+	}
+	public Presidentes getPresidentes() {
+		
+		return pre;
 	}
 }

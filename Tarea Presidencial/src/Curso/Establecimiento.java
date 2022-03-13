@@ -2,28 +2,13 @@ package Curso;
 
 public class Establecimiento {
 
-	private int codEst;
-	private String DirEst;
 	private String nombreEst;
+	private String DirEst;
 	
-	
-	public Establecimiento(int codEst, String dirEst, String nombreEst) {
-		this.codEst = codEst;
-		this.DirEst = dirEst;
+	public Establecimiento(String nombreEst, String DirEst) {
+		
 		this.nombreEst = nombreEst;
-	}
-	
-	public int getCodEst() {
-		return codEst;
-	}
-	public void setCodEst(int codEst) {
-		this.codEst = codEst;
-	}
-	public String getDirEst() {
-		return DirEst;
-	}
-	public void setDirEst(String dirEst) {
-		DirEst = dirEst;
+		this.DirEst = DirEst;
 	}
 	
 	public String getNombreEst() {
@@ -33,6 +18,13 @@ public class Establecimiento {
 	public void setNombreEst(String nombreEst) {
 		this.nombreEst = nombreEst;
 	}
-	
+
+	public String getDirEst() {
+		return DirEst;
+	}
+
+	public void setDirEst(String dirEst) {
+		DirEst = dirEst;
+	}
 	
 }
